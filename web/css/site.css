@@ -1,0 +1,340 @@
+html,
+body {
+    height: 100%;
+}
+
+.wrap {
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto -60px;
+    padding: 0 0 60px;
+}
+
+.wrap > .container {
+    padding: 70px 15px 20px;
+}
+
+.footer {
+    height: 60px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.jumbotron {
+    text-align: center;
+    background-color: transparent;
+}
+
+.jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+}
+
+.not-set {
+    color: #c55;
+    font-style: italic;
+}
+
+/* add sorting icons to gridview sort links */
+a.asc:after, a.desc:after {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    padding-left: 5px;
+}
+
+a.asc:after {
+    content: /*"\e113"*/ "\e151";
+}
+
+a.desc:after {
+    content: /*"\e114"*/ "\e152";
+}
+
+.sort-numerical a.asc:after {
+    content: "\e153";
+}
+
+.sort-numerical a.desc:after {
+    content: "\e154";
+}
+
+.sort-ordinal a.asc:after {
+    content: "\e155";
+}
+
+.sort-ordinal a.desc:after {
+    content: "\e156";
+}
+
+.grid-view th {
+    white-space: nowrap;
+}
+
+.hint-block {
+    display: block;
+    margin-top: 5px;
+    color: #999;
+}
+
+.error-summary {
+    color: #a94442;
+    background: #fdf7f7;
+    border-left: 3px solid #eed3d7;
+    padding: 10px 20px;
+    margin: 0 0 15px 0;
+}
+
+/* align the logout "link" (button in form) of the navbar */
+.nav li > form > button.logout {
+    border: none;
+}
+
+@media(max-width:767px) {
+    .nav li > form > button.logout {
+        display:block;
+        text-align: left;
+        width: 100%;
+        padding: 10px 15px;
+    }
+
+    .category-buttons .btn.left {
+        display: none;
+    }
+}
+
+.nav > li > form > button.logout:focus,
+.nav > li > form > button.logout:hover {
+    text-decoration: none;
+}
+
+.nav > li > form > button.logout:focus {
+    outline: none;
+}
+
+.col-centered{
+    text-align:center;
+    padding-bottom: 15px;
+}
+.panel-body .row-content {
+    margin-bottom:1em;
+}
+span.panel-title {
+    font-size:16px;
+    display:block;
+    width:90%;
+}
+.last-added span.panel-title:after {
+    font-family: 'FontAwesome';
+    content: "\f150";
+}
+.salon-view .list-group-item {
+    margin-bottom:20px;
+}
+
+.row-action-primary {
+    float:left;
+}
+.row-action-primary .material-icons {
+    font-size: 36px !important;
+}
+.row-action-primary .rating {
+    display:inline-block;
+    width:100%;
+    text-align: center;
+}
+.salon-view .list-group .list-group-item {
+    padding: 16px;
+}
+
+.salon-view .list-group .list-group-item .approve-status{
+    font-weight: 100;
+    color: green;
+}
+
+.salon-view .list-group .list-group-item.not-approved .approve-status{
+    font-weight: 700;
+    color: #901111;
+}
+.salon-view .list-group .list-group-item.not-approved {
+    background-color: rgba(255,0,0,0.2);
+}
+.side-menu .list-group {
+    font-size:15px;
+}
+
+.dropdown-search-result {
+    display:none;
+    max-width: 320px;
+    max-height: 500px;
+    overflow-y: auto;
+    position: absolute;
+    background: white;
+    color: black;
+    padding: 15px;
+}
+
+.dropdown-search-result .salon-short {
+    max-width:100px;
+    padding:15px;
+    float:right;
+}
+
+.dropdown-search-result img {
+    max-width:150px;
+    float:left;
+}
+
+.card {
+    padding: 2em;
+    max-height: 500px;
+    margin: 15px 0;
+    overflow: hidden;
+}
+
+.grid.card .card-img-wrap {
+    width: calc(100% + 4em);
+    position: relative;
+    margin-left: -2em;
+    margin-top: -2em;
+}
+
+.list .card .card-img-wrap .btn-rate {
+    margin-top:15px;
+}
+.grid.card .card-img-wrap .btn-rate {
+    position: absolute;
+    right: 1em;
+    bottom: 1em;
+}
+
+.card .card-img-wrap .btn-rate .pull-left {
+    left: auto;
+    right: 0;
+    min-width: 0;
+    text-align: right;
+}
+.card .card-img-wrap .btn-rate .material-icons {
+    font-size: 14px;
+}
+
+.grid.card .card-img-top {
+    width: 100%;
+}
+.list .card .card-img-top {
+    width: 100%;
+    float:left;
+}
+
+.grid.card .card-buttons {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    margin: 0; padding: 2em 0;
+    /* "transparent" only works here because == rgba(0,0,0,0) */
+    background-image: linear-gradient(to bottom, transparent, white);
+}
+
+.navbar-collapse.in {
+    overflow-y: visible;
+}
+
+.pagination {
+    width: 100%;
+}
+
+.navbar-collapse {
+    max-height: inherit !important;
+}
+.right-sided {
+    float:right;
+}
+#map_toggle {
+    cursor:pointer;
+}
+
+.fancybox.inline {
+    display:inline-block;
+}
+#sortable_img li.ui-state-default {
+    display:inline-block;
+    position: relative;
+}
+#sortable_img li.ui-state-default:first-child::before {
+    content: 'Главная картинка!';
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 0;
+    font-weight: 700;
+    font-size: 18px;
+}
+.thumbnail {
+    max-width:80px;
+    display:inline-block;
+}
+.fancybox:first-child img{
+    width: 100%;
+    max-width: 250px;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.list>.card-img-wrap .card-img-top img {
+    max-width:250px;
+}
+.img-bg-wrap>p{
+    height: 100vh;
+    background: linear-gradient(to bottom, rgba(255,255,255,0), rgb(238, 238, 238));
+    z-index: -2;
+    position: relative;
+}
+.img-bg-wrap{
+    min-height: 600px;
+    background: transparent;
+}
+.img-bg {
+    z-index: -5;
+    filter:blur(6px);
+}
+.site-index>.body-content>.row {
+    background: rgba(255,255,255,0.5);
+    border-radius: 10px;
+}
+.jumbotron {
+    text-align: inherit !important;
+    margin-top: 20px;
+    background: rgba(255,255,255,0.7);
+}
+
+.jumbotron .btn {
+    text-transform: none;
+    display:block;
+}
+.jumbotron h1 {
+    width:100%;
+    text-align: center;
+}
+.jumbotron p {
+    font-size:16px;
+}
+#random_wrapper>.row {
+    position: relative;
+}
+.pluso-more {
+    display:none !important;
+}
+.form-group input[type=file] {
+    opacity: 1;
+    position: static;
+}
+.comments-section {
+    margin-top:20px;
+}
